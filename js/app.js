@@ -1,15 +1,15 @@
-document.addEventListener('DOMContentLoaded',() => {
-  console.log('JavaScript has been loaded')
+document.addEventListener('DOMContentLoaded', () =>{
+  console.log('Java has loaded');
+  const button = document.querySelector('#button');
+  button.addEventListener('click', handleClick);
 
-  const button = document.querySelector('button');
-  button.addEventListener('click', handleClick)
+})
 
-  const body = document.querySelector('body')
+const handleClick = function(){
+  const colors = ['pink','blue','black','rose','violet'];
+  const randomIndex = parseInt(Math.random() * (colors.length + 1));
+  const changeBackground = colors[randomIndex];
 
-
-  const colors = ['blue', 'purple', 'black', 'orange']
-});
-
-function handleClick(){
-  body.backgroundColor ='red';
+  const result = document.querySelector('body')
+  result.style.backgroundColor = changeBackground;
 }

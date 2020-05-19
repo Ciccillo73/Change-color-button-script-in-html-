@@ -5,19 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Click Event</title>
-  <script>
-
-    function changeBackground(){
-      const colors = ['red','blue','pink','black','yellow'];
-      const index = parseInt(Math.random() * (colors.length + 1));
-      document.body.style.background = colors[index];
-      }
-
-  </script>
+  <script src="js/app.js"></script>
   <h1 id="heading"></h1>
 
 </head>
 <body>
-  <button onclick="changeBackground()">ClickMe</button>
+  <button id="button">ClickMe</button>
 </body>
 </html>
