@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 const handleClick = function(){
   const colors = ['pink','blue','black','rose','violet'];
-  const randomIndex = parseInt(Math.random() * (colors.length + 1));
+  const randomIndex = parseInt(Math.random() * (colors.length);
   const changeBackground = colors[randomIndex];
 
   const result = document.querySelector('body')
